@@ -1,0 +1,61 @@
+#about-body {
+  font-family: sans-serif;
+
+  #org-nav {
+    opacity: 1;
+    z-index: 4;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .about-site-title {
+    font-size: 55px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #fff;
+    padding-top: 30%;
+    padding-bottom: 17%;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.1rem 0.1rem 0.7rem black;
+  }
+  .txt-color {
+    color: $primary-color;
+    font-weight: bold;
+  }
+  .txt-color-normal {
+    color: $primary-color;
+  }
+  .about-txt {
+    font-family: "Courgette", cursive;
+    color: $primary-color;
+  }
+  .txt-new {
+    font-family: "Courgette", cursive;
+    font-size: 60px;
+  }
+
+  .about-bg {
+  }
+
+  .footer-txt {
+    color: white !important;
+    font-size: 15px;
+  }
+  #about-btn {
+    background-color: $primary-color !important;
+    text-shadow: 0.1rem 0.1rem 0.7rem black !important;
+    &:hover {
+      @include easeOut;
+      background-color: wheat !important;
+      color: $primary-color !important;
+    }
+  }
+}

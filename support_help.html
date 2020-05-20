@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Css Coming From Sass-->
+
+    <link rel="stylesheet/scss" type="text/css" href="sass/style.scss" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/tab-logo.png" />
+
+    <!--BootStrap 4 Css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/d44b24acad.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>BookTheChefs</title>
+  </head>
+
+  <body data-spy="scroll" data-target="#navbarResponsive">
+    <section id="support-section">
+      <section id="shadow">
+       <div class="container-fluid" id="top-nav">
+      <div class="row">
+<div class="col-md-6 text-left">
+  <span class="fine"> Fine Dining At Your Fingertips</span>
+
+</div>
+<div class="col-md-6 text-right finedine">
+  
+    <a href="#"> Log In <i class="fas fa-sign-in-alt"></i></a> | <a class="signup" href="#">Sign Up <i class="fas fa-sign-in-alt"></i></i></a>
+ 
+
+</div>
+      </div>
+
+    </div>  
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light" id="org-nav">
+  <div class="container">
+  <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""> <span class="logo-txt"> BookTheChefs</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color: white;"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav  ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html" >Home <span class="sr-only">(current)</span></a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="/about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/restaurants.html">Restaurants</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/chefs.html" target="_blank">Chefs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Support</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-outline-light " href="/orders.html" target="_blank">
+             Place an order
+            </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+   
+
+      
+      <!--***********************************Start BAnner Section*******************************************************-->
+  
+        <div class="site-content text-center justify-center">
+                       <div class="container-fluid img-contain" >
+        
+            <h1 class="site-title" id="fineh1">
+              Welcome to Our Customer Support Section
+            </h1>
+
+           <h2>Connect with our 24-7 support team</h2>
+
+            <div class="down-btn">
+            <a class="btn btn-down btn-outline-light btn-lg" href="#support">
+            <i class="fas fa-angle-down fa-lg"></i>
+            </a>
+</div>
+            
+             
+   
+           
+           
+      </div>
+    </div>
+</section>
+    </section>
+    <!--***********************************Start About Section*******************************************************-->
+
+    <section id="support">
+<div class="container-fluid">
+    <!-- <h1>Support</h1> -->
+    <div class="row">
+        <div class="col-md-6">
+            <form id="supportform">
+<h1>Support Form</h1>
+    <label for="exampleFormControlInput1"> <span style="color: red;">*</span>Name</label>
+<input class="form-control" type="text" placeholder="Name or Restaurant Name" required>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1"><span style="color: red;">*</span>Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+  </div>
+
+ <label for="exampleFormControlInput1"> <span style="color: red;">*</span>Phone</label>
+<input class="form-control" type="text" placeholder="Phone" required>
+
+
+  <div class="form-group" id="category">
+    <label for="exampleFormControlSelect1"><span style="color: red;">*</span>Category</label>
+    <select class="form-control" id="exampleFormControlSelect1" required>
+      <option value="" disabled selected>Select an option</option>
+      <option >Account Settings</option>
+      <option>Payments</option>
+      <option>Troubleshooting</option>
+     <option>Live Order Issue</option>
+      <option>Order Support</option>
+      <option>Health, Safety or Legal Issue</option>
+      <option>Other</option>
+      <option>App Troubleshooting</option>
+      <option>Order in Progress Support</option>
+      <option>Post pick up Support</option>
+    </select>
+
+
+
+  </div>
+
+<label for="exampleFormControlInput1">Subcategory</label>
+<select name="subcategory" id="subcategory">
+
+
+ <optgroup id = "B" label="Account Settings"> 
+<option value="choose an option" disabled selected>None</option>
+    <option  value="Change Credit Card">Change Credit Card</option>
+    <option value="Password Assistance" >Password Assistance</option>
+  </optgroup>
+
+  <optgroup  label="Payments"> 
+    <option value="" disabled selected>None</option>
+    <option >Order Receipts</option>
+    <option >Credits and Refunds</option>
+    <option >Referrals </option>
+  </optgroup>
+
+  <optgroup  label="Troubleshooting"> 
+    <option  disabled selected>None</option>
+    <option >BooktheChefs App: Android</option>
+    <option >BooktheChefs App: iOS</option>
+    <option >Other </option>
+  </optgroup>
+
+<optgroup  label="Live Order Issue"> 
+    <option disabled selected></option>
+  </optgroup>
+
+<optgroup  label="Order Support"> 
+    
+    <option >Alcohol</option>
+    <option >Cancel an Order</option>
+    <option >BooktheChefs Locations</option>
+    <option >Missing/Incorrect Item</option>
+    <option >Restaurant Ratings</option>
+    <option >Other</option>
+  </optgroup>
+
+  <optgroup  label="Health, Safety or Legal Issue"> 
+    <option  disabled selected>None</option>
+  </optgroup>
+
+  <optgroup  label="Other"> 
+    <option  disabled selected>None</option>
+  </optgroup>
+
+  <optgroup  label="App Troubleshooting"> 
+    <option  disabled selected>None</option>
+  </optgroup>
+
+  <optgroup value='' label="Order in Progress Support"> 
+    <option  disabled selected>None</option>
+  </optgroup>
+
+  <optgroup  label="Post pick up Support"> 
+    <option  disabled selected>None</option>
+  </optgroup>
+
+ </select>
+
+ <div class="form-group">
+    <label for="exampleFormControlTextarea1">Extra Comment</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  
+<div class="form-group">
+ <button type="submit" class="btn btn-primary mb-2">Send</button>
+</div>
+
+</form>
+        </div>
+        <div class="col-md-6">
+        <h1 id="asked">Frequently Asked Questions</h1>
+        <hr class="asked">
+<h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, sequi?</h4>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque esse beatae eos placeat obcaecati minus harum soluta. Natus, eos?</p>
+
+<hr>
+
+<h4>Lorem, ipsum dolor sit amet consectetur ?</h4>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque esse beatae eos placeat obcaecati minus harum soluta. Natus, eos.</p>
+
+<hr>
+
+<h4>Lorem, ipsum dolor sit amet consectetur ?</h4>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque esse beatae eos placeat obcaecati minus harum soluta. Natus, eos.</p>
+
+<hr>
+
+<h4>Lorem, ipsum dolor sit amet consectetur ?</h4>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque esse beatae eos placeat obcaecati minus harum soluta. Natus, eos.</p>
+
+<hr>
+
+</div>
+    </div>
+</div>
+    </section>
+    <!--***********************************End عAbout*******************************************************-->
+
+    <!--************Footer***************************-->
+
+<section id="footer">
+  <footer>
+    <div class="row">
+      <h6> <a href="#" target="_blank">Terms and Conditions</a></h6>
+      <h6> <a href="#" target="_blank">Privacy Policy</a></h6>
+      <h6> <a href="#" target="_blank">Business Services</a></h6> 
+  <h6> <a href="#" target="_blank"> Be A Partner</a>
+  <h6> <a href="#" target="_blank"> Application End User Licence Agreement</a></h6>
+    <h6> <a href="#" target="_blank"> About</a>
+    <h6> <a href="#" target="_blank"> contact us</a>
+  
+    </div>
+
+    <div class="social-links text-center">
+      <a href=""><i class="fab fa-twitter fa-md"></i></a>
+      <a href=""><i class="fab fa-linkedin fa-md"></i></a>
+    </div>
+
+<h5 class="text-center">© Copyright are reserved to BookTheChefs 2020</h5>
+
+
+
+  </footer>
+</section>
+
+
+
+    <!--************Footer***************************-->
+
+    <!--JavaScrip Main-->
+
+    <!--BootStrap 4 JavaScrip-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

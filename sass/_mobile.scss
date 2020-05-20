@@ -1,0 +1,304 @@
+//**************Wide Screens********************
+@include mediaXlg {
+  .projects {
+    grid-template-columns: (4, 1fr);
+  }
+}
+
+//***************Desktops & Laptops******************
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+//*****************TABLETS*********************
+@include mediaMd {
+  #index-body {
+    #top-nav {
+      padding: 10px;
+    }
+
+    #org-nav {
+      opacity: 1;
+      z-index: 4;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      margin-bottom: -10%;
+
+      background-color: rgba($color: #000000, $alpha: 0.5) !important;
+    }
+  }
+  .btn-up {
+    visibility: hidden;
+  }
+
+  .fine {
+    visibility: hidden;
+  }
+  #orders-main {
+    .grade {
+      visibility: hidden;
+    }
+    img {
+      width: 450px;
+      height: 450px;
+      padding: 10px 0 !important;
+    }
+    h1 {
+      padding-left: 60% !important;
+    }
+
+    .timings {
+      padding-left: 60%;
+    } //restaurant-desc
+    p {
+      padding-left: 60%;
+    }
+    .firs-taste {
+      margin-left: 60% !important;
+    }
+  }
+
+  #chefs-home-sec {
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 25px;
+      display: block;
+      right: 20px;
+      position: relative;
+      margin-left: -50%;
+    }
+  }
+  #chefs {
+    img {
+      max-width: 75%;
+    }
+  }
+
+  main {
+    align-items: center;
+    text-align: center;
+
+    .h1-big-text {
+      line-height: 1;
+      font-size: 30px;
+      margin-bottom: 1rem;
+    }
+  }
+  .ul-nav-menu,
+  .menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .ul-nav-menu {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+  }
+  .portrait {
+    max-height: 150px;
+    max-width: 150px;
+  }
+
+  //about-page
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
+  #about .h1-big-text {
+    font-size: 40px;
+  }
+
+  //Projects
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #my-img {
+    max-width: 180px;
+    max-height: 180px;
+  }
+  #carouselExampleControls {
+    .btn-order {
+      font-size: 19px;
+      margin-top: 5%;
+    }
+  }
+  #portfolio {
+    .btn {
+      font-size: 19px;
+    }
+  }
+  #services-section {
+    .btn {
+      font-size: 19px;
+    }
+  }
+  #about #bon-appetit {
+    font-size: 19px;
+  }
+}
+
+//*************************Mobiles************************
+@include mediaSm {
+  // #top-nav {
+  //   a {
+  //     position: absolute;
+
+  //     right: 35px;
+  //     margin-right: 50%;
+  //   }
+  // }
+  // .navbar {
+  //   bottom: 480px;
+  // }
+
+  #index-body {
+    #org-nav {
+      opacity: 1;
+      z-index: 4;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      margin-bottom: -15%;
+      padding-bottom: 2%;
+      background-color: rgba($color: #000000, $alpha: 0.5) !important;
+    }
+  }
+  #carouselExampleControls {
+    .site-title {
+      animation: yourAnimation 1s forwards 0.5s ease-in;
+      font-size: 40px;
+
+      line-height: 40px;
+      color: #fff;
+      padding-top: 0;
+      margin-bottom: 4%;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 0.1rem;
+      text-shadow: 0.1rem 0.1rem 0.7rem black;
+    }
+
+    .btn-order {
+      // animation: yourAnimation 2s forwards 0s ease;
+      color: #fff;
+      font-size: 25px;
+      border-radius: 0;
+
+      letter-spacing: 5;
+      text-shadow: 0.1rem 0.1rem 0.7rem black;
+      text-align: center;
+      padding: 10px 25px;
+      margin-bottom: 2%;
+    }
+
+    .btn-down {
+      margin: 19% 0 25% 0;
+      border-radius: 50%;
+    }
+
+    .slide-img {
+      background-attachment: fixed !important;
+      background-size: cover;
+      overflow-x: hidden;
+      height: 600px;
+    }
+  }
+
+  .restaurant-form .btn {
+    padding: 8px 30% !important;
+    text-align: center;
+  }
+  .btn-up {
+    visibility: hidden;
+  }
+
+  #footer {
+    text-align: left;
+    h6 {
+      font-size: 15px;
+      padding: 7px;
+    }
+  }
+
+  #fineh1 {
+    padding-bottom: 10%;
+    font-size: 29px;
+  }
+
+  #orders-main {
+    .grade {
+      visibility: hidden;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+    }
+    h1 {
+      padding-left: 0 !important;
+    }
+
+    .timings {
+      padding-left: 0;
+    } //restaurant-desc
+    p {
+      padding-left: 0;
+    }
+    .firs-taste {
+      margin-left: 0 !important;
+    }
+  }
+
+  #chefs-home-sec {
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 29px;
+      display: block;
+      right: 0;
+      position: relative;
+      margin-left: 0;
+    }
+  }
+
+  #about-body {
+    font-family: sans-serif;
+    .about-site-title {
+      font-size: 40px;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      line-height: 40px;
+      color: #fff;
+      padding-top: 40%;
+      padding-bottom: 2%;
+      text-align: center;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+      text-shadow: 0.1rem 0.1rem 0.7rem black;
+    }
+  }
+}
